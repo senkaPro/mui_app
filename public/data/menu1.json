@@ -1,0 +1,93 @@
+[
+    {
+        "icon": "assets/home-icon.png", 
+        "title": "Dashboard", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/catalogue.png", 
+        "title": "Catalogue", 
+        "dropdown": true,
+        "chip": null,
+        "dropdownName": "catalogue"
+    },
+    {
+        "icon": "assets/menuicon.png", 
+        "title": "Orders", 
+        "dropdown": false,
+        "chip": 14,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/person.png", 
+        "title": "Customers", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/target.png", 
+        "title": "Marketing", 
+        "dropdown": true,
+        "chip": null,
+        "dropdownName": "marketing"
+    },
+    {
+        "icon": "assets/truck.png", 
+        "title": "Delivery Options", 
+        "dropdown": "",
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/dollar-sign.png", 
+        "title": "Payment Options", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/brush.png", 
+        "title": "Store Design", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/credit-card.png", 
+        "title": "Subscription", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/integration.png", 
+        "title": "Integrations", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/new-app.png", 
+        "title": "Extensions", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/settings.png", 
+        "title": "Settings", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/log-out.png", 
+        "title": "Log out", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    }
+]

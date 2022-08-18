@@ -1,0 +1,526 @@
+@import '_mixins.scss';
+
+.GridCardCoreLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    gap: 24px;
+    width: 349px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+    border-radius: 10px;
+    >.VisitorsCard {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        width: 349px;
+        height: 220px;
+        gap: 24px;
+        > .VisitorsCard__title_container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 95px;
+            width: 301px;
+            height: 25px;
+            > .VisitorsCard__title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 16px;
+
+                width: 107px;
+                height: 25px;
+                > .VisitorsCard__titleText {
+                    width: 71px;
+                    height: 25px;
+                    font-family: 'Noto Sans HK';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 25px;
+                    display: flex;
+                    align-items: center;
+                    color: #103B66;
+                }
+                > .VisitorsCard__icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            @include select-dropdown
+        }
+        > .VisitorsCard_counter {
+            display: flex;
+            align-items: center;
+            width: 146px;
+            height: 79px;
+
+            font-family: 'Noto Sans HK';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 61px;
+
+            color: #103B66;
+
+        }
+        > .VisitorsCard_linkContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            gap: 12px;
+
+            width: 301px;
+            height: 20px;
+            cursor: pointer;
+
+            > .VisitorsCard_link {
+                width: 271px;
+                height: 20px;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-decoration-line: underline;
+                color: #21B8F9;
+            }
+            > .VisitorsCard_linkIcon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    >.AppstoreCard{
+        display: flex;
+        position: relative;
+        width: 348px;
+        height: 343px;
+        padding: 24px;
+        background: #F3A35C;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+        border-radius: 10px;
+        > .MainText {
+            position: absolute;
+            width: 162px;
+            height: 135px;
+            left: 23px;
+            top: 32px;
+            font-family: 'Noto Sans HK';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 27px;
+            color: #FFFFFF;
+        }
+        >.MainLink {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 12px;
+
+            position: absolute;
+            width: 113px;
+            height: 20px;
+            left: 22px;
+            top: 180px;
+            cursor: pointer;
+            > .LinkText {
+                width: 81px;
+                height: 20px;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-decoration-line: underline;
+                color: #FFFFFF
+            }
+            > .LinkIcon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        > .deviceImage {
+            background-image: url('../assets/device-iPhone12.png');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 113.79px;
+            height: 228.41px;
+            left: 208px;
+            top: 22px;
+        }
+        > .AppstoreIcons {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 24px;
+
+            position: absolute;
+            width: 302px;
+            height: 40px;
+            left: 23px;
+            top: 280px;
+            >.appstore{
+                width: 126px;
+                height: 40px;
+                cursor: pointer;
+            }
+            >.googleplay{
+                width: 141px;
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.GridCardCoreRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+    gap: 24px;
+    width: 356px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+    border-radius: 10px;
+    >.OrdersCard {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 24px;
+        gap: 24px;
+        > .OrdersCard_titleContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px;
+            gap: 91px;
+
+            width: 308px;
+            height: 27px;
+
+            > .OrdersCard_title {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 16px;
+
+                width: 112px;
+                height: 27px;
+                > .OrdersCard_titleText {
+                    width: 72px;
+                    height: 27px;
+
+                    font-family: 'Noto Sans HK';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 27px;
+                    display: flex;
+                    align-items: center;
+                    color: #103B66;
+                }
+                > .OrdersCard_icon {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 24px;
+                    height: 24px;
+                    
+                }
+            }
+
+            @include select-dropdown;
+            
+        }
+        > .OrdersCard_contentContainer {
+            display: flex;
+            position: relative;
+            width: 308px;
+            height: 56px;
+            > .OrdersCard_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 12px;
+
+                width: 302px;
+                height: 56px;
+                left: 0px;
+                top: 0px;
+                > .OrdersCard_row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 302px;
+                    height: 22px;
+                    > .OrdersCard_rowLeft {
+                        display: flex;
+                        width: 129px;
+                        height: 22px;
+                        margin-left: 0px;
+                        margin-top: 0px;
+                        font-family: 'Noto Sans HK';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 22px;
+                        display: flex;
+                        align-items: center;
+                        color: #6C7C8C;
+                    }
+                    > .OrdersCard_rowRight{
+                        display: flex;
+                        flex-direction: row;
+                        width: fit-content;
+                        height: 22px;
+                        margin-right: 0px;
+                        margin-top: 0px;
+                        font-family: 'Noto Sans HK';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17px;
+                        line-height: 22px;
+                        align-items: center;
+                        text-align: right;
+                        color: #103B66;
+                    }
+                }
+            }
+        }
+        > .OrdersCard_link {
+            width: 234px;
+            height: 41px;
+            font-family: 'Source Sans Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            display: flex;
+            align-items: flex-end;
+            text-decoration-line: underline;
+            color: #21B8F9;
+            cursor: pointer;
+        }
+    }
+    > .MarketCard {
+        display: flex;
+        position: relative;
+        width: 357px;
+        height: 343px;
+        padding: 24px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        overflow-x: hidden;
+        box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+        border-radius: 10px;
+        >.MarketTitleContainer{
+            position: absolute;
+            width: 302px;
+            height: 25px;
+            left: 24px;
+            top: 24px;
+            >.MarketTitle{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 16px;
+                position: absolute;
+                width: 261px;
+                height: 25px;
+                left: 0px;
+                top: 0px;
+                >.MarketTitleIcon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20px;
+                    height: 20px;
+                }
+                >.MarketTitleText {
+                    width: 225px;
+                    height: 25px;
+                    font-family: 'Noto Sans HK';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 25px;
+                    display: flex;
+                    align-items: center;
+                    color: #103B66;
+                }
+            }
+        }
+        >.MarketCardLinkContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 12px;
+
+            position: absolute;
+            width: 193px;
+            height: 20px;
+            left: 24px;
+            top: 299px;
+            cursor: pointer;
+            >.MarketCardLinkText{
+                width: 161px;
+                height: 20px;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-decoration-line: underline;
+                color: #21B8F9;     
+            }
+            >.MarketCardLinkIcon{
+                display: flex;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        >.ScrollContainer {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 50px;
+
+            position: absolute;
+            width: 681px;
+            height: 202px;
+            left: 24px;
+            top: 73px;
+
+        }
+    }
+}
+.ScrollItemContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 12px;
+                width: 152px;
+                height: 202px;
+                >.ScrollItemTitle{
+                    display: flex;
+                    flex-direction: row;
+                    box-sizing: border-box;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 50px;
+                    gap: 10px;
+                    width: 152px;
+                    height: 150px;
+                    background: #FFA26B;
+                    border-radius: 10px;
+                    background-image: url('../assets/web.png');
+                    background-size: auto;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                >.ScrollItemContent{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 10px;
+
+                    width: 152px;
+                    height: 40px;
+                    >.ScrollItemText{
+                        width: 160px;
+                        height: 40px;
+                        font-family: 'Source Sans Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 20px;
+                        color: #103B66;
+
+                    }
+                }
+            }
+
+.SelectButton {
+    width: max-content;
+    height: 100%;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: #666666;
+    border: none;
+    background-color: transparent;
+    z-index: 1012;
+}
+
+.SelectPopper {
+    display: flex;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    border: none;
+    background-color: #FFF;
+    align-items: center;
+    color: #666666;
+    width: fit-content;
+    z-index: 100;
+    > ul {
+        margin: 0;
+        padding: 7px;
+        list-style: none;
+        > li {
+            font-size: 14px;
+            padding: 3px;
+            margin: 0;
+            text-decoration: none;
+            &:hover {
+                background-color: #F5F5F5;
+            }
+        }
+    }
+}

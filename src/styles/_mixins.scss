@@ -1,0 +1,217 @@
+@mixin select-dropdown {
+    >.SelectDropdown_select {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+
+        width: 100%;
+        height: 18px;
+
+        > .SelectDropdown_selectIcon {
+            display: flex;
+            width: 16px;
+            height: 16px;
+        }
+        > .SelectDropdown_option {
+            display: flex;
+            height: 18px;
+            font-size: 14px;
+        }
+    }
+}
+
+@mixin side-card {
+    .SideCardContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 24px;
+        box-sizing: border-box;
+        width: 350px;
+        height: fit-content;
+        box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+        border-radius: 10px;
+        >.SideCardIconTitle{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            > .SideCardIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+            }
+            >.SideCardTitle {
+                width: 213px;
+                height: 27px;
+
+                font-family: 'Noto Sans HK';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 27px;
+                display: flex;
+                align-items: center;
+            }
+        }
+        >.SideCardContentContainer{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            width: 302px;
+            box-sizing: border-box;
+            >.FirstCard {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                flex: 1;
+                width: 302px;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                > .FirstCardTitle {
+                    width: 79px;
+                    height: 56px;
+                    font-family: 'Source Sans Pro';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 34px;
+                    line-height: 39px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    color: #FFA26B;
+                    .number {
+                        font-size: 34px;
+                        line-height: 40px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .completed {
+                        font-size: 17px;
+                        line-height: 17px;
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+                > .FirstCardContent {
+                    width: 302px;
+                    font-family: 'Noto Sans HK';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 22px;
+                    display: flex;
+                    flex: 1;
+                    align-items: flex-start;
+                    box-sizing: border-box;
+                    justify-content: flex-start;
+                    color: #103B66;
+                }
+            }
+            >.SecondCard {
+                font-family: 'Noto Sans KR';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 22px;
+                align-items: center;
+                > .green {
+                    word-break: break-word;
+                    color: #00C48C;
+                }
+                > .white {
+                    word-break: break-word;
+                    font-weight: 900;
+                    color: #FFFFFF;
+                }
+            }
+            >.ForthCard {
+                display: flex;
+                width: 302px;
+                height: 40px;
+                box-sizing: border-box;
+                align-items: center;
+                justify-content: flex-start;
+                column-gap: 22px;
+                margin: 0;
+                padding: 0;
+                >.ForthCardImg {
+                    box-sizing: border-box;
+                    width: 40px;
+                    height: 40px;
+                }
+                >.ForthCardContent {
+                    width: 240px;
+                    font-family: 'Noto Sans HK';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 24px;
+                    display: flex;
+                    align-items: center;
+                    color: #103B66;
+                }
+            }
+        }
+        >.SideCardLinkContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 12px;
+            height: 20px;
+            >.SideCardLink {
+                height: 20px;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-decoration-line: underline;
+                cursor: pointer;
+            }
+            >.SideCardImg {
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+        >.SideCardButton {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 10px;
+            width: 168px;
+            height: 50px;
+            background: #21B8F9;
+            border: none;
+            box-shadow: 0px 4px 4px rgba(50, 50, 71, 0.08), 0px 4px 8px rgba(50, 50, 71, 0.06);
+            border-radius: 5px;
+            cursor: pointer;
+            .text {
+                height: 20px;
+                font-family: 'Source Sans Pro';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                text-transform: initial;
+            }
+        }
+    }
+}

@@ -1,0 +1,223 @@
+.SideMenuContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: 255px;
+    min-height: 909px;
+    max-height: max-content;
+    height: 929px;
+    left: 0px;
+    top: 75px;
+
+    >.MenuContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 2px;
+
+        width: 255px;
+        height: max-content;
+        > .MenuItemContainer {
+            position: relative;
+            width: 255px;
+            height: 32px;
+            background-color: white;
+            &:focus::before,
+            &:hover::before,
+            &:active::before {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 32px;
+                left: 0px;
+                top: 0px;
+                background: #21B8F9;
+                border-radius: 20px;
+            }
+            > .MenuItem {
+                position: absolute;
+                width: 248px;
+                height: 32px;
+                left: 7px;
+                top: 0px;
+    
+                &:active,
+                &:hover,
+                &:focus {
+                    background: #F7F7F7;
+                    color: #21B8F9;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                > .Item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    gap: 16px;
+                    overflow: hidden;
+                
+                    position: absolute;
+                    width: 160px;
+                    height: 20px;
+                    left: 13px;
+                    top: 6px;
+                    > .ItemIcon {
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    > .ItemTitle {
+                        display: flex;
+                        align-items: center;
+                        width: 150px;
+                        height: 16px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-family: 'Noto Sans HK';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+                > .DropdownIcon {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: 208px;
+                    top: 6px;
+                }
+                > .DropdownChip {
+                    display: flex;
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    left: 215px;
+                    top: 4px;
+                    > .DropdownChipContainer {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        right: 12px;
+                        top: calc(50% - 24px/2);
+                        background: #00C48C;
+                        border-radius: 50%;
+                        > .DropdownChipContent {
+                            font-size: 9px;
+                            line-height: 9px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        > .DropDownContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 6px 0px 8px;
+            height: max-content;
+            background: #E9F8FE;
+            > .DropdownMenuItemContainer{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px 7px;
+                gap: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                height: 36px;
+                >.DropdownMenuItem{
+                    display: flex;
+                    position: relative;
+                    width: 236px;
+                    height: 36px;
+    
+                    border-radius: 4px;
+                    > .DropdownItem {
+                        display: flex;
+                        position: absolute;
+                        width: 100px;
+                        height: 16px;
+                        left: 49px;
+                        top: 9px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-family: 'Noto Sans HK';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+    
+                        color: #233B53;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+        
+                }
+            }
+        }
+    }
+    >.Devider {
+        width: 255px;
+        height: 1px;
+        background: #E5E5E5; 
+    }
+}
+.SelectWithLabelContainer {
+    display: flex;
+    position: absolute;
+    width: 215px;
+    height: 85px;
+    left: 16px;
+    bottom: 24px;
+    > .FormLabel {
+        position: absolute;
+        width: 119px;
+        height: 20px;
+        left: 0px;
+        top: 0px;
+
+        font-family: 'Noto Sans HK';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+
+        color: #546679;
+    }
+    >.Select {
+        box-sizing: border-box;
+        position: absolute;
+        height: 50px;
+        left: 0px;
+        right: 0px;
+        top: 35px;
+        background: #FFFFFF;
+        border: 1px solid rgba(10, 37, 64, 0.24);
+        border-radius: 5px;
+        > .SelectIcon {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            right: 12px;
+            top: 48.06px;
+        }
+    }
+}
+

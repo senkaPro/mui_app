@@ -1,0 +1,30 @@
+[
+    {
+        "label": "This month",
+        "value": {
+            "received": 156,
+            "earning": 1893.24
+        }
+    },
+    {
+        "label": "Last month",
+        "value": {
+            "received": 85,
+            "earning": 903.80
+        }
+    },
+    {
+        "label": "Last week",
+        "value": {
+            "received": 124,
+            "earning": 1305.50
+        }
+    },
+    {
+        "label": "All year",
+        "value": {
+            "received": 482,
+            "earning": 190519.86
+        }
+    }
+]

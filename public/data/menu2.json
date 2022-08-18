@@ -1,0 +1,23 @@
+[
+    {
+        "icon": "assets/help-circle.png", 
+        "title": "Customer Support", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/share-2.png", 
+        "title": "Share your shop", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    },
+    {
+        "icon": "assets/menuicon.png", 
+        "title": "View your shop", 
+        "dropdown": false,
+        "chip": null,
+        "dropdownName": null
+    }
+]
