@@ -26,12 +26,12 @@ const AdsScroll = () => {
   return (
     <Box className={cards.ScrollContainer}>
       <Swiper
-      className={cards.ScrollContainer}
-      spaceBetween={50}
-      slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
+        className={cards.ScrollContainer}
+        spaceBetween={50}
+        slidesPerView={3}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
       <SwiperSlide><Card itemId={"webcard1"} key={"webcard1"} /></SwiperSlide>
       <SwiperSlide><Card itemId={"webcard2"} key={"webcard2"}/></SwiperSlide>
       <SwiperSlide><Card itemId={"webcard3"} key={"webcard3"}/></SwiperSlide>
